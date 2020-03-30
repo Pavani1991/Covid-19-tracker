@@ -5,17 +5,20 @@ import SiderComponent from "./common/SiderComponent";
 import SafetyMeasures from "./components/SafetyMeasures";
 import TrackData from "./components/TrackData";
 import SelfDiagnosis from "./components/SelfDiagnosis";
+import { Layout } from "antd";
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/" component={SafetyMeasures} />
-        <Route path="/selfDiagnosis" component={SelfDiagnosis} />
-        <Route path="/trackCases" component={TrackData} />
-        <Route path="/safetyMeasures" component={SafetyMeasures} />
-      </Switch>
-      <SiderComponent />
+      <Layout>
+        <SiderComponent />
+        <Switch>
+          <Route exact path="/" component={SafetyMeasures} />
+          <Route path="/selfDiagnosis" component={SelfDiagnosis} />
+          <Route path="/trackCases" component={TrackData} />
+          <Route path="/safetyMeasures" component={SafetyMeasures} />
+        </Switch>
+      </Layout>
     </div>
   );
 }

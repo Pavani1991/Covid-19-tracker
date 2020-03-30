@@ -14,6 +14,24 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 30em;
+  line-height: 30em;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+#safetyMeasures {
+  width: 106em;
+}
+
+.ant-layout-sider {
+  background: #fff;
+}
 
 .App-header {
   background-color: #282c34;
